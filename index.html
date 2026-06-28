@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Hospital | Critical Care Center Latur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Top Bar -->
+    <div class="bg-blue-900 text-white text-sm py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div><i class="fas fa-map-marker-alt mr-2"></i> Dinanath Nagar, Sawewadi, Latur</div>
+            <div class="font-bold">
+                <i class="fas fa-phone-alt mr-2"></i> Emergency: 02382-251452
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-800 flex items-center gap-2">
+                <i class="fas fa-heartbeat text-red-500"></i> Galaxy Hospital
+            </div>
+            <div class="hidden md:flex gap-6 font-medium text-gray-700">
+                <a href="#services" class="hover:text-blue-600">Our Services</a>
+                <a href="#icu" class="hover:text-blue-600">Critical Care</a>
+                <a href="#insurance" class="hover:text-blue-600">Cashless Insurance</a>
+            </div>
+            <a href="#appointment" class="bg-blue-600 text-white px-5 py-2 rounded-md font-bold hover:bg-blue-700 transition">
+                Book Appointment
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-blue-50 py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                    Advanced Critical Care & <span class="text-blue-600">Multispecialty Experts</span> in Latur
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Providing 24/7 world-class medical treatment, state-of-the-art ICU facilities, and compassionate care when you need it most.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#appointment" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded shadow font-bold transition">Consult a Doctor</a>
+                    <a href="tel:02382251452" class="bg-red-50 text-red-600 border border-red-200 hover:bg-red-100 px-6 py-3 rounded shadow font-bold transition">
+                        <i class="fas fa-ambulance mr-2"></i> Call Ambulance
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" class="rounded-xl shadow-2xl" alt="Modern Hospital Corridors">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Specialties</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 border rounded-lg hover:shadow-lg transition text-center">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-procedures text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Advanced ICU</h3>
+                    <p class="text-gray-600">24/7 monitoring with high-tech ventilators and dedicated intensivist doctors.</p>
+                </div>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition text-center">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-user-md text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">General Surgery</h3>
+                    <p class="text-gray-600">Expert surgical care utilizing modern minimally invasive techniques.</p>
+                </div>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition text-center">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-x-ray text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Diagnostics</h3>
+                    <p class="text-gray-600">In-house pathology and radiology for rapid, accurate test results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section id="appointment" class="bg-blue-900 py-16 text-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="text-3xl font-bold mb-4">Book Your OPD Appointment</h2>
+            <p class="mb-8">Skip the wait. Schedule your visit with our specialists today.</p>
+            <form class="bg-white text-gray-800 p-8 rounded-xl shadow-2xl text-left" onsubmit="event.preventDefault(); alert('Appointment requested! Patient details sent to hospital reception.');">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Patient Name</label>
+                        <input type="text" class="w-full border rounded px-4 py-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Phone Number</label>
+                        <input type="tel" class="w-full border rounded px-4 py-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Department</label>
+                        <select class="w-full border rounded px-4 py-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+                            <option>General Medicine</option>
+                            <option>Orthopedics</option>
+                            <option>Cardiology</option>
+                            <option>General Surgery</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Preferred Date</label>
+                        <input type="date" class="w-full border rounded px-4 py-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
+                    Confirm Booking Request
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>&copy; 2026 Galaxy Hospital and Critical Care Center, Latur.</p>
+        <p class="text-sm mt-2">Website by [Your Agency Name]</p>
+    </footer>
+</body>
+</html>
